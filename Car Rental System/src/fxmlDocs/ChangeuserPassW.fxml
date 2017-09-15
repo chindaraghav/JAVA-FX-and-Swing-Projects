@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="stackk" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="537.0" prefWidth="413.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ChangeUserPassC">
+   <children>
+      <ImageView fitHeight="542.0" fitWidth="418.0" pickOnBounds="true">
+         <image>
+            <Image url="@Image/images.jpg" />
+         </image>
+         <effect>
+            <InnerShadow radius="4.75" width="0.0" />
+         </effect>
+      </ImageView>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="537.0" prefWidth="415.0">
+         <children>
+            <JFXTextField fx:id="prevU" alignment="CENTER" focusColor="#d4ff00" labelFloat="true" layoutX="67.0" layoutY="135.0" prefHeight="41.0" prefWidth="279.0" promptText="Previous User-Name" style="-fx-background-color: #ffffff;" unFocusColor="#c9ff00">
+               <font>
+                  <Font name="System Bold Italic" size="16.0" />
+               </font>
+               <effect>
+                  <InnerShadow height="17.06" radius="6.7299999999999995" width="11.86" />
+               </effect>
+            </JFXTextField>
+            <JFXTextField fx:id="newU" alignment="CENTER" focusColor="#d4ff00" labelFloat="true" layoutX="70.0" layoutY="305.0" prefHeight="41.0" prefWidth="279.0" promptText="New User-Name" style="-fx-background-color: #ffffff;" unFocusColor="#c9ff00">
+               <font>
+                  <Font name="System Bold Italic" size="16.0" />
+               </font>
+               <effect>
+                  <InnerShadow height="17.06" radius="6.7299999999999995" width="11.86" />
+               </effect>
+            </JFXTextField>
+            <JFXButton fx:id="butt1" buttonType="RAISED" layoutX="365.0" layoutY="6.0" onAction="#close" prefHeight="34.0" prefWidth="43.0" />
+            <Label layoutX="15.0" layoutY="38.0" prefHeight="54.0" prefWidth="393.0" text="Change UserName/PassWord" textFill="#eb0a0a">
+               <font>
+                  <Font name="System Bold Italic" size="28.0" />
+               </font>
+               <effect>
+                  <InnerShadow radius="5.5525" width="3.21" />
+               </effect>
+            </Label>
+            <JFXButton fx:id="butt" buttonType="RAISED" layoutX="306.0" layoutY="458.0" onAction="#changeIt" prefHeight="60.0" prefWidth="86.0" ripplerFill="#caeb0c" />
+            <JFXPasswordField fx:id="prevP" alignment="CENTER" layoutX="69.0" layoutY="217.0" prefHeight="41.0" prefWidth="279.0" promptText="Previous Pass-Word" style="-fx-background-color: #ffffff;">
+               <font>
+                  <Font name="System Bold Italic" size="16.0" />
+               </font>
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </JFXPasswordField>
+            <JFXPasswordField fx:id="newP" alignment="CENTER" layoutX="67.0" layoutY="389.0" prefHeight="41.0" prefWidth="279.0" promptText="New Pass-Word" style="-fx-background-color: #ffffff;">
+               <font>
+                  <Font name="System Bold Italic" size="16.0" />
+               </font>
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </JFXPasswordField>
+         </children>
+      </AnchorPane>
+   </children>
+   <effect>
+      <InnerShadow choke="0.29" height="75.85" radius="35.5725" width="68.44" />
+   </effect>
+</StackPane>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="451.0" prefWidth="912.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ControlMemberT">
+   <children>
+      <TableView fx:id="table" layoutX="83.0" layoutY="17.0" prefHeight="464.0" prefWidth="792.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <columns>
+          <TableColumn fx:id="idt" prefWidth="66.33332824707031" text="ID" />
+          <TableColumn fx:id="namet" prefWidth="144.0" text="Name" />
+            <TableColumn fx:id="fnamet" prefWidth="135.33334350585938" text="Father's Name" />
+            <TableColumn fx:id="phonet" prefWidth="151.33331298828125" text="Phone" />
+            <TableColumn fx:id="emailt" prefWidth="234.33331298828125" text="E-Mail" />
+            <TableColumn fx:id="addresst" prefWidth="177.66668701171875" text="Address" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

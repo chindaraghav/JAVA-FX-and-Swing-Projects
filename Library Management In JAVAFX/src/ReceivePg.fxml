@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="344.0" prefWidth="571.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ControlReceive">
+   <children>
+      <ImageView fitHeight="354.0" fitWidth="575.0" pickOnBounds="true">
+         <image>
+            <Image url="@seamless_royal_background__2__by_crealextion-d6bs5q0.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <Label layoutX="155.0" layoutY="24.0" prefHeight="58.0" prefWidth="256.0" text="Recieve Book" textFill="#c62a2a">
+               <font>
+                  <Font name="System Bold Italic" size="40.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="bookid" focusColor="#cde804" labelFloat="true" layoutX="101.0" layoutY="118.0" prefHeight="37.0" prefWidth="363.0" promptText="Book-Id" style="-fx-background-color: #ffffff;" unFocusColor="#18a7ee">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="memid" focusColor="#cde804" labelFloat="true" layoutX="101.0" layoutY="194.0" prefHeight="37.0" prefWidth="363.0" promptText="Member -ID" style="-fx-background-color: #ffffff;" unFocusColor="#18a7ee">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </JFXTextField>
+            <JFXButton buttonType="RAISED" layoutX="412.0" layoutY="265.0" onAction="#handle" prefHeight="47.0" prefWidth="114.0" ripplerFill="#def707" style="-fx-background-color: #f90717;" text="Update">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

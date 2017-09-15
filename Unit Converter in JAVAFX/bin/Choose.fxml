@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.SepiaTone?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="297.0" prefWidth="414.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ControPage">
+   <children>
+      <ListView layoutX="122.0" layoutY="99.0" prefHeight="155.0" prefWidth="180.0">
+         <effect>
+            <InnerShadow />
+         </effect>
+      </ListView>
+      <RadioButton fx:id="temp" layoutX="159.0" layoutY="143.0" mnemonicParsing="false" onAction="#handle" prefHeight="29.0" prefWidth="112.0" text="Temprature">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+         <toggleGroup>
+            <ToggleGroup fx:id="MyGroup" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="dist" layoutX="159.0" layoutY="174.0" mnemonicParsing="false" onAction="#handle" prefHeight="29.0" prefWidth="112.0" text="Distance" toggleGroup="$MyGroup">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+      </RadioButton>
+      <RadioButton fx:id="curr" layoutX="159.0" layoutY="203.0" mnemonicParsing="false" onAction="#handle" prefHeight="29.0" prefWidth="112.0" text="Currency" toggleGroup="$MyGroup">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+      </RadioButton>
+      <RadioButton fx:id="weight" layoutX="159.0" layoutY="114.0" mnemonicParsing="false" onAction="#handle" prefHeight="29.0" prefWidth="112.0" text="Weight" toggleGroup="$MyGroup">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+      </RadioButton>
+      <Label layoutX="44.0" layoutY="25.0" prefHeight="56.0" prefWidth="342.0" text="Select Conversion Type!">
+         <font>
+            <Font name="MS UI Gothic" size="32.0" />
+         </font>
+         <effect>
+            <SepiaTone />
+         </effect>
+      </Label>
+   </children>
+   <effect>
+      <InnerShadow />
+   </effect>
+</AnchorPane>

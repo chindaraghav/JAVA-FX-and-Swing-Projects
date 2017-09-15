@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="487.0" prefWidth="554.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ControlLibrarianPg">
+   <children>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #242420;">
+         <children>
+            <Label fx:id="lbl" layoutX="88.0" layoutY="14.0" prefHeight="69.0" prefWidth="394.0" text="Welcome Librarian" textFill="#ddff00">
+               <font>
+                  <Font name="Bauhaus 93" size="48.0" />
+               </font>
+            </Label>
+            <JFXButton buttonType="RAISED" layoutX="149.0" layoutY="103.0" onAction="#add" prefHeight="42.0" prefWidth="273.0" ripplerFill="#242420" style="-fx-background-color: #f92e09;" text="Add Books">
+               <font>
+                  <Font name="System Bold Italic" size="21.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="152.0" layoutY="209.0" onAction="#issue" prefHeight="38.0" prefWidth="273.0" ripplerFill="#e1ff00" style="-fx-background-color: #f92e09;" text="Issue Books">
+               <font>
+                  <Font name="System Bold Italic" size="21.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="150.0" layoutY="314.0" onAction="#newM" prefHeight="45.0" prefWidth="273.0" ripplerFill="#e1ff00" style="-fx-background-color: #f92e09;" text="New Member">
+               <font>
+                  <Font name="System Bold Italic" size="21.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="151.0" layoutY="365.0" onAction="#about" prefHeight="23.0" prefWidth="273.0" ripplerFill="#e1ff00" style="-fx-background-color: #f92e09;" text="About Member">
+               <font>
+                  <Font name="System Bold Italic" size="21.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="153.0" layoutY="419.0" onAction="#logOut" prefHeight="45.0" prefWidth="273.0" ripplerFill="#efff00" style="-fx-background-color: #3900ff;" text="Log Out" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="21.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="151.0" layoutY="261.0" onAction="#receive" prefHeight="45.0" prefWidth="273.0" ripplerFill="#e1ff00" style="-fx-background-color: #f92e09;" text="Receive Book">
+               <font>
+                  <Font name="System Bold Italic" size="21.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="151.0" layoutY="155.0" onAction="#status" prefHeight="45.0" prefWidth="273.0" ripplerFill="#e1ff00" style="-fx-background-color: #f92e09;" text="Status">
+               <font>
+                  <Font name="System Bold Italic" size="21.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

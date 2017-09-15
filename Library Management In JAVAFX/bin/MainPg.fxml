@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.effect.GaussianBlur?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="303.0" prefWidth="492.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ControlMainPg">
+   <children>
+      <ImageView fx:id="img" fitHeight="324.0" fitWidth="490.0" pickOnBounds="true" preserveRatio="true">
+         <effect>
+            <GaussianBlur />
+         </effect>
+      </ImageView>
+      <AnchorPane prefHeight="301.0" prefWidth="569.0">
+         <children>
+            <JFXButton buttonType="RAISED" layoutX="103.0" layoutY="80.0" onAction="#handle" prefHeight="48.0" prefWidth="303.0" ripplerFill="#dcf803" style="-fx-background-color: #391fde;" text="Admin Login" textFill="#fcfafa">
+               <font>
+                  <Font name="System Bold" size="26.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="103.0" layoutY="188.0" onAction="#handle2" prefHeight="48.0" prefWidth="303.0" ripplerFill="#dcf803" style="-fx-background-color: #391fde;" text="Librarian Login" textFill="#fcfafa">
+               <font>
+                  <Font name="System Bold" size="26.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

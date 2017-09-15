@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.GaussianBlur?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="366.0" prefWidth="601.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AdminPgControl">
+   <children>
+      <ImageView fx:id="img" fitHeight="373.0" fitWidth="605.0" pickOnBounds="true">
+         <effect>
+            <GaussianBlur />
+         </effect></ImageView>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <Label layoutX="147.0" layoutY="26.0" prefHeight="56.0" prefWidth="337.0" text="Welcome Admin! " textFill="#f8f5f5">
+               <font>
+                  <Font name="System Bold" size="39.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="add" buttonType="RAISED" layoutX="156.0" layoutY="119.0" onAction="#add" prefHeight="44.0" prefWidth="311.0" ripplerFill="#f70c17" style="-fx-background-color: #0cb4f9;" text="Add Librarian" textFill="#250303">
+               <font>
+                  <Font name="System Italic" size="23.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="view" buttonType="RAISED" layoutX="156.0" layoutY="180.0" onAction="#view" prefHeight="44.0" prefWidth="311.0" ripplerFill="#f70c17" style="-fx-background-color: #0cb4f9;" text="View Librarian" textFill="#250303">
+               <font>
+                  <Font name="System Italic" size="23.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="delete" buttonType="RAISED" layoutX="156.0" layoutY="239.0" onAction="#delete" prefHeight="44.0" prefWidth="311.0" ripplerFill="#f70c17" style="-fx-background-color: #0cb4f9;" text="Delete Librarian" textFill="#250303">
+               <font>
+                  <Font name="System Italic" size="23.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="logout" buttonType="RAISED" layoutX="156.0" layoutY="296.0" onAction="#logout" prefHeight="44.0" prefWidth="311.0" ripplerFill="#f70c17" style="-fx-background-color: #0cb4f9;" text="Log-Out" textFill="#250303">
+               <font>
+                  <Font name="System Italic" size="23.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

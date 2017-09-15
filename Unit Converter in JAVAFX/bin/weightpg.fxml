@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="340.0" prefWidth="522.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ControWeight">
+   <children>
+      <Label layoutX="113.0" layoutY="14.0" prefHeight="69.0" prefWidth="200.0" text="WEIGHT" textFill="#0cfa15">
+         <font>
+            <Font name="Impact" size="54.0" />
+         </font>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Label>
+      <Label layoutX="41.0" layoutY="92.0" prefHeight="34.0" prefWidth="94.0" text="From-">
+         <font>
+            <Font name="System Bold Italic" size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="41.0" layoutY="175.0" prefHeight="34.0" prefWidth="94.0" text="To-">
+         <font>
+            <Font name="System Bold Italic" size="19.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txt" layoutX="120.0" layoutY="140.0" prefHeight="25.0" prefWidth="164.0" promptText="Type Value Here!">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </TextField>
+      <ComboBox fx:id="com1" layoutX="120.0" layoutY="97.0" prefHeight="25.0" prefWidth="164.0" />
+      <ComboBox fx:id="com2" layoutX="120.0" layoutY="180.0" prefHeight="25.0" prefWidth="164.0" />
+      <Label fx:id="lbl" layoutX="21.0" layoutY="248.0" prefHeight="43.0" prefWidth="284.0" text="Result=">
+         <font>
+            <Font name="System Bold Italic" size="25.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="img" fitHeight="220.0" fitWidth="211.0" layoutX="294.0" layoutY="45.0" pickOnBounds="true" preserveRatio="true" />
+      <Button layoutX="284.0" layoutY="291.0" mnemonicParsing="false" onAction="#handle" prefHeight="43.0" prefWidth="115.0" text="Calculate">
+         <font>
+            <Font name="System Bold Italic" size="17.0" />
+         </font>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Button>
+      <Button fx:id="ext" layoutX="399.0" layoutY="291.0" mnemonicParsing="false" onAction="#EXIT" prefHeight="43.0" prefWidth="102.0" text="EXIT!">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Button>
+      <Button layoutX="1.0" layoutY="2.0" mnemonicParsing="false" onAction="#goBack" prefHeight="25.0" prefWidth="81.0" text="&lt;-Go Back" textFill="#050011">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+   </children>
+   <effect>
+      <InnerShadow />
+   </effect>
+</AnchorPane>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="175.0" prefWidth="556.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Tools.CancelControl">
+   <children>
+      <ImageView fitHeight="175.0" fitWidth="556.0" pickOnBounds="true">
+         <image>
+            <Image url="@Image/abstract-smooth-background.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="105.0" layoutY="32.0" prefHeight="54.0" prefWidth="433.0" text="Do You Really Want To CANCELThe Contract?">
+         <font>
+            <Font name="Impact" size="24.0" />
+         </font>
+      </Label>
+      <JFXButton buttonType="RAISED" layoutX="338.0" layoutY="108.0" onAction="#deleteIt" prefHeight="37.0" prefWidth="119.0" ripplerFill="WHITE" style="-fx-background-color: #154ea8;" text="YES! Cancel It" textFill="#e1b4b4">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="457.0" layoutY="108.0" onAction="#cancel" prefHeight="37.0" prefWidth="69.0" style="-fx-background-color: #d31041;" text="NO!" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </JFXButton>
+      <ImageView fitHeight="98.0" fitWidth="84.0" layoutX="8.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Images/warning.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

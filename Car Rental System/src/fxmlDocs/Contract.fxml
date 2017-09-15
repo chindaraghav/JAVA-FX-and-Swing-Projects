@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="680.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ContractC">
+   <children>
+      <AnchorPane layoutX="-1.0" prefHeight="142.0" prefWidth="1203.0">
+         <children>
+            <ImageView fitHeight="141.0" fitWidth="1202.0" layoutX="1.0" pickOnBounds="true">
+               <image>
+                  <Image url="@Image/ppp.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="86.0" fitWidth="85.0" layoutX="96.0" layoutY="27.0" pickOnBounds="true">
+               <image>
+                  <Image url="@Image/home-button-for-interface%20(1).png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="86.0" fitWidth="85.0" layoutX="291.0" layoutY="26.0" pickOnBounds="true">
+               <image>
+                  <Image url="@Image/sign-out-option.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="86.0" fitWidth="85.0" layoutX="514.0" layoutY="26.0" pickOnBounds="true">
+               <image>
+                  <Image url="@Image/refresh-button.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="86.0" fitWidth="85.0" layoutX="761.0" layoutY="28.0" pickOnBounds="true">
+               <image>
+                  <Image url="@Image/exit.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="86.0" fitWidth="85.0" layoutX="1010.0" layoutY="25.0" pickOnBounds="true">
+               <image>
+                  <Image url="@Image/magnifier.png" />
+               </image>
+            </ImageView>
+            <JFXButton buttonType="RAISED" layoutX="92.0" layoutY="28.0" onAction="#goHome" prefHeight="87.0" prefWidth="92.0" ripplerFill="BLACK" text=" " />
+            <JFXButton buttonType="RAISED" layoutX="288.0" layoutY="27.0" onAction="#goOut" prefHeight="87.0" prefWidth="92.0" ripplerFill="BLACK" text=" " />
+            <JFXButton buttonType="RAISED" layoutX="508.0" layoutY="26.0" onAction="#refresh" prefHeight="87.0" prefWidth="92.0" ripplerFill="BLACK" text=" " />
+            <JFXButton buttonType="RAISED" layoutX="751.0" layoutY="22.0" onAction="#closeIt" prefHeight="87.0" prefWidth="92.0" ripplerFill="BLACK" text=" " />
+            <JFXButton buttonType="RAISED" layoutX="1001.0" layoutY="18.0" onAction="#search" prefHeight="96.0" prefWidth="101.0" ripplerFill="#4a4a47" text=" " />
+         </children>
+      </AnchorPane>
+      <TableView fx:id="table" layoutX="3.0" layoutY="141.0" prefHeight="538.0" prefWidth="1198.0" style="-fx-background-color: cyan;">
+        <columns>
+          <TableColumn fx:id="name" prefWidth="105.33332824707031" text="Name" />
+          <TableColumn fx:id="fname" editable="false" prefWidth="110.66667175292969" text="FatherName" />
+            <TableColumn fx:id="pno" editable="false" minWidth="3.0" prefWidth="106.0" text="Phone Number" />
+            <TableColumn fx:id="addr" editable="false" prefWidth="143.0" text="Address" />
+            <TableColumn fx:id="desti" editable="false" prefWidth="103.66668701171875" text="Destination" />
+            <TableColumn fx:id="kms" editable="false" prefWidth="61.66668701171875" text="Kms" />
+            <TableColumn fx:id="from" editable="false" prefWidth="79.33331298828125" text="From Date" />
+            <TableColumn fx:id="to" editable="false" prefWidth="65.6666259765625" text="To Date" />
+            <TableColumn fx:id="fare" editable="false" prefWidth="73.0" text="Total Fare" />
+            <TableColumn fx:id="adv" editable="false" prefWidth="81.0" text="Advance Paid" />
+            <TableColumn fx:id="doc" editable="false" prefWidth="114.00006103515625" text="Document" />
+            <TableColumn fx:id="carid" editable="false" prefWidth="52.3333740234375" text="Car-ID" />
+            <TableColumn fx:id="date" editable="false" prefWidth="50.333251953125" text="Date" />
+            <TableColumn fx:id="cid" editable="false" prefWidth="71.666748046875" text="ID" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

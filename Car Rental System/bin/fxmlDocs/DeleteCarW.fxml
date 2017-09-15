@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="259.0" prefWidth="453.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.DeleteCarC">
+   <children>
+      <ImageView fitHeight="259.0" fitWidth="453.0" pickOnBounds="true">
+         <image>
+            <Image url="@Image/blurred-background-2.jpg" />
+         </image>
+      </ImageView>
+      <JFXTextField fx:id="txt1" alignment="CENTER" focusColor="WHITE" labelFloat="true" layoutX="48.0" layoutY="62.0" prefHeight="57.0" prefWidth="349.0" promptText="Type Car Name" style="-fx-background-color: white;" unFocusColor="BLACK">
+         <font>
+            <Font name="Impact" size="27.0" />
+         </font>
+         <effect>
+            <DropShadow color="#917dff" spread="0.58" />
+         </effect>
+      </JFXTextField>
+      <JFXButton buttonType="RAISED" layoutX="141.0" layoutY="175.0" onAction="#Delete" prefHeight="74.0" prefWidth="169.0" ripplerFill="BLACK" style="-fx-background-color: #ffffff; -fx-border-color: #000000; -fx-border-width: 3;" text="Delete">
+         <font>
+            <Font name="System Bold" size="32.0" />
+         </font></JFXButton>
+      <JFXButton fx:id="close" buttonType="RAISED" layoutX="412.0" layoutY="6.0" onAction="#closeIt" prefHeight="30.0" prefWidth="32.0" ripplerFill="#edf815" />
+   </children>
+</AnchorPane>

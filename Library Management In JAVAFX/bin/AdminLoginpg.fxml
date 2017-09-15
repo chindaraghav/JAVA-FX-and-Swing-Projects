@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.GaussianBlur?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="305.0" prefWidth="489.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ControlAdminLogin">
+   <children>
+      <ImageView fx:id="img1" fitHeight="303.0" fitWidth="488.0" pickOnBounds="true" preserveRatio="true">
+         <effect>
+            <GaussianBlur />
+         </effect></ImageView>
+      
+      <AnchorPane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <JFXTextField fx:id="user" focusColor="#eb1228" labelFloat="true" layoutX="86.0" layoutY="95.0" prefHeight="31.0" prefWidth="309.0" promptText="UserName" style="-fx-background-color: #f2efee;" unFocusColor="#252323">
+               <font>
+                  <Font name="System Bold Italic" size="22.0" />
+               </font>
+            </JFXTextField>
+            <JFXPasswordField fx:id="pass" focusColor="#da0910" labelFloat="true" layoutX="86.0" layoutY="174.0" prefHeight="40.0" prefWidth="309.0" promptText="PassWord" style="-fx-background-color: #f2efee;">
+               <font>
+                  <Font name="System Bold Italic" size="23.0" />
+               </font>
+            </JFXPasswordField>
+            <Label layoutX="120.0" layoutY="17.0" prefHeight="49.0" prefWidth="253.0" text="Admin Login" textFill="#f2efee">
+               <font>
+                  <Font name="Imprint MT Shadow" size="36.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="Login" buttonType="RAISED" layoutX="334.0" layoutY="242.0" onAction="#handle" prefHeight="49.0" prefWidth="133.0" style="-fx-background-color: #f10d0d;" text="Login!" textFill="#ebe4e4">
+               <font>
+                  <Font name="System Bold Italic" size="22.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

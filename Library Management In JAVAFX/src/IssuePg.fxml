@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.GaussianBlur?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="530.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ControlIssuePg">
+   <children>
+      <ImageView fitHeight="402.0" fitWidth="533.0" pickOnBounds="true">
+         <image>
+            <Image url="@img1%20-%20Copy.png" />
+         </image>
+         <effect>
+            <GaussianBlur />
+         </effect>
+      </ImageView>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <Label layoutX="148.0" layoutY="10.0" prefHeight="68.0" prefWidth="240.0" text="Issue Book" textFill="#e4d0d0">
+               <font>
+                  <Font name="System Bold" size="46.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="memid" focusColor="#e5ff00" labelFloat="true" layoutX="120.0" layoutY="107.0" prefHeight="29.0" prefWidth="294.0" promptText="Member-ID" style="-fx-background-color: #ffffff;" unFocusColor="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="name" focusColor="#e5ff00" labelFloat="true" layoutX="118.0" layoutY="183.0" prefHeight="29.0" prefWidth="294.0" promptText="Book Name" style="-fx-background-color: #ffffff;" unFocusColor="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="bookid" focusColor="#e5ff00" labelFloat="true" layoutX="118.0" layoutY="261.0" prefHeight="29.0" prefWidth="294.0" promptText="Book -ID" style="-fx-background-color: #ffffff;" unFocusColor="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </JFXTextField>
+            <JFXButton buttonType="RAISED" layoutX="386.0" layoutY="319.0" onAction="#handle" prefHeight="52.0" prefWidth="106.0" ripplerFill="#e1ff00" style="-fx-background-color: #bb817b;" text="Submit">
+               <font>
+                  <Font name="System Bold Italic" size="21.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>
